@@ -4,5 +4,6 @@ describe('Simple test', () => {
     cy.contains('Kitchen Sink').should('exist');
     cy.contains('type').should('be.visible');
     cy.contains('docs.cypress.io').should('be.visible').click();
+    cy.contains('Nonexistent Text');
   })
 });
